@@ -1,0 +1,7 @@
+/*css3模拟checkbox 利用label的for属性来控制checkbox的选中状态*/
+.check-box{position:relative;width:25px;height:25px;}
+.checkbox-input{visibility:hidden;}
+.check-box:hover label:after{opacity:0.5;}
+.check-box label{border:1px solid #ddd;width:25px;height:25px;cursor:pointer;background:#eee;position:absolute;top:0;left:0;}
+.check-box label:after{content:"";border:3px solid #333;position:absolute;width:9px;height:5px;opacity:0.2;transform:rotate(-45deg);border-top:none;border-right:none;top:7px;left:5px;}
+.checkbox-input:checked + label:after{opacity:1;}

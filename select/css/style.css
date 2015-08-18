@@ -1,0 +1,11 @@
+ul,li{margin:0;padding:0;list-style:none;}
+.select-box{position: relative;display: inline-block;border: 1px solid #62b14c;}
+.select-box .select-top{height: 34px;line-height: 34px;overflow: hidden;}
+.select-box .select-left,.select-box .select-right{display: block;float: left;}
+.select-box .select-left{background: #fff;height: 100%;width: 74px;padding: 0 5px;color: #282828;}
+.select-box .select-right{width: 34px;height: 100%;cursor: pointer;background: #62b14c url('../img/arrow-down.png') no-repeat center;text-align: center;}
+.select-bottom{position: absolute;left: -1px; top: 35px;z-index: 1990;width: 100%;max-height: 160px;overflow: auto;border: 1px solid #62b14c;border-top: none;background: #fff;text-indent: 5px;display: none;}
+.select-bottom li{height: 25px;line-height: 25px;white-space: nowrap;}
+.select-bottom li:hover{background: #6db359;color: #fff;cursor: pointer;}
+.open .select-bottom{display: block;}
+.select-bottom .selected{background: #6db359;color: #fff;}

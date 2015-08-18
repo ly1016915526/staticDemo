@@ -1,0 +1,67 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+		<title>switch</title>
+		<style>
+			.mui-switch{width:52px;height:31px;position:relative;border:1px solid #dfdfdf;border-radius:20px;background-clip:content-box;display:inline-block;-webkit-appearance:none;user-select:none;outline:none;cursor:pointer;}
+			.mui-switch:before{content:"";width:29px;height:29px;position:absolute;top:0;left:0;border-radius:20px;background-color:#fff;box-shadow:0 1px 3px rgba(0,0,0,0.4);transition: left 0.3s;}
+			.mui-switch:checked{border-color:#64bd63;box-shadow:0 0 0 16px #64bd63 inset;background-color:#64bd63;}
+			.mui-switch:checked:before{left:21px;}
+			
+		</style>
+		<script type="text/javascript">
+		/*
+			var EventUntil = {
+				addHandler : function(element, type, handler){
+					if(element.addEventListener){
+						element.addEventListener(type, handler, false);
+					}else if(element.attachEvent){
+						element.attachEvent("on" + type, handler);
+					}else{
+						element["on" + type] = handler;
+					}
+				},
+				removeHandler : function(element, type, handler){
+					if(element.removeEventListener){
+						element.removeEventListener(type, handler, false);
+					}else if(element.detachEvent){
+						element.detachEvent("on" + type, handler);
+					}else{
+						element["on" + type] = null;
+					}
+				}
+			};
+			
+			EventUntil.addHandler(window, "load", function(event){
+				var list = document.getElementById("mylist");
+				EventUntil.addHandler(document, "DOMSubtreeModified", function(event){
+					console.log(event.type,event.target);
+				});
+				EventUntil.addHandler(document, "DOMNodeRemoved", function(event){
+					console.log(event.type,event.target,event.relatedNode);
+				});
+				EventUntil.addHandler(list.firstChild, "DOMNodeRemovedFromDocument", function(event){
+					console.log(event.type, event.target);
+				});
+				list.parentNode.removeChild(list);
+			});
+			*/
+			
+		</script>
+	</head>
+	<body>
+		<label><input type="checkbox" class="mui-switch"/>默认未选中</label>
+		
+		<label><input type="checkbox" class="mui-switch" checked/>默认未选中</label>
+		
+		<ul id="mylist">
+			<li>item1</li>
+			<li>item2</li>
+		</ul>
+		<script>
+			var list = document.getElementById("mylist")[0];
+			console.log(list);
+		</script>
+	</body>
+</html>

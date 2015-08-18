@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<title>CSS3模拟jquery的slide效果</title>
+		<script src="./js/jquery-1.11.3.js"></script>
+		<style>
+			#demoSlideContanier{-moz-box-shadow:1px 1px 5px #000;-webkit-box-shadow:1px 1px 5px #000;box-shadow:1px 1px 5px #000;padding:0;overflow:hidden;margin:10px auto;}
+		</style>
+	</head>
+	<body>
+		<div id="demoSlideContanier"></div>
+		<br/>
+		<div id="demoSlide1" style="margin:0 auto;"></div>
+		<br/>
+		<div id="demoSlide2" style="margin:0 auto;"></div>
+		<script type="text/javascript" src="./js/slideShow.js"></script>
+		<script type="text/javascript">
+			$(function(){
+			/*
+				$("#demoSlideContanier").slideShow({
+					"data":[
+						{
+							"name":"伦敦眼摩天轮",
+							"img":"./img/1.jpg"
+						},
+						{
+							"name":"湖区国家公园",
+							"img":"./img/2.jpg"
+						},
+						{
+							"name":"意大利",
+							"img":"./img/3.jpg"
+						},
+					],
+					"animationName":"transition-opacity",
+				});
+				
+				$("#demoSlide1").slideShow({
+					"cWidth":600,
+					"itemWidth":600,
+					"itemHeight":400,
+					"data":[
+						{
+							"img":"./img/4.jpg"
+						},
+						{
+							"img":"./img/5.jpg"
+						},
+						{
+							"img":"./img/6.jpg"
+						},
+					],
+					"animationName":"transition-zoom",
+					"animateTime" :3000
+				});
+				*/
+				$("#demoSlide2").slideShow({
+					"cWidth":400,
+					"itemWidth":400,
+					"itemHeight":600,
+					"data":[
+						{
+							"img":"./img/7.jpg"
+						},
+						{
+							"img":"./img/8.jpg"
+						},
+						{
+							"img":"./img/9.jpg"
+						},
+					],
+					"animationName":"transition-dezoom",
+					"animateTime" :3000
+				});
+			});
+			
+			
+		</script>
+	</body>
+</html>

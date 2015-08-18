@@ -1,0 +1,42 @@
+body{font-family:"微软雅黑"}
+.slide-images{margin:0 auto;overflow:hidden;position:relative;padding:0;}
+.slide-images .slide-image{position:absolute;list-style-type:none;}
+.slide-images .slide-image img{z-index:2;}
+.slide-images .slide-image span{background:rgba(0,0,0,0.3);-moz-border-radius:5px 0 0 0;-webkit-border-radius:5px 0 0 0;border-radius:5px 0 0 0;bottom:4px;color:rgba(255,255,255,0.8);font-size:14px;font-weight:bold;padding:5px 10px;position:absolute;right:0;z-index:3;}
+.slide-images .slide-image.current img{z-index:12}
+.slide-images .slide-image.current span{z-index:13}
+.options{padding:10px;text-align:center;}
+.options a{color:#91becc;font-size:12px;font-weight:bold;text-decoration:none;margin:0 3px;}
+.options a:hover{color:#d3e5eb;}
+.options .slide-pager a{-moz-transition-duration:0.5s;-webkit-transition-duration:0.5s;-o-transition-duration:0.5s;transition-duration:0.5s;}
+.options .slide-pager a.current{background-color:#91becc;border-radius:10px;color:#fff;padding:0 5px;}
+.options .prevSlide{float:left;}
+.options .nextSlide{float:right;}
+/*transition effect*/
+.slide-images .slide-image,.slide-images .slide-image img{-moz-transition-duration:1.5s;-webkit-transition-duration:1.5s;-o-transition-duration:1.5s;transition-duration:1.5s;}
+.slide-images.transition-opacity .slide-image{opacity:0;width:0;}
+.slide-images.transition-opacity .slide-image.current{opacity:1;}
+.slide-images.transition-left .slide-image{opacity:0;}
+.slide-images.transition-left .slide-image.current{left:0;opacity:1;}
+.slide-images.transition-right .slide-image {opacity: 0;}
+.slide-images.transition-right .slide-image.current {right: 0;opacity: 1;}
+.slide-images.transition-top .slide-image {opacity: 0;}
+.slide-images.transition-top .slide-image.current {opacity: 1;top: 0;}
+.slide-images.transition-bottom .slide-image {opacity: 0;}
+.slide-images.transition-bottom .slide-image.current {opacity: 1;bottom: 0;}
+.slide-images.transition-cornerzoom .slide-image {opacity: 0;}
+.slide-images.transition-cornerzoom .slide-image.current {opacity: 1;}
+.slide-images.transition-cornerzoom .slide-image img {}    
+.slide-images.transition-cornerzoom .slide-image.current img {}
+.slide-images.transition-zoom .slide-image {opacity: 0;}
+.slide-images.transition-zoom .slide-image.current {opacity: 1;}
+.slide-images.transition-zoom .slide-image img {position: relative;}
+.slide-images.transition-zoom .slide-image.current img {left: 0;top: 0;}
+.slide-images.transition-dezoom .slide-image {opacity: 0;}
+.slide-images.transition-dezoom .slide-image.current {opacity: 1;}
+.slide-images.transition-dezoom .slide-image img {position: relative;}
+.slide-images.transition-dezoom .slide-image.current img {left: 0;top: 0;}
+.slide-images.transition-rotate .slide-image {opacity: 0;}
+.slide-images.transition-rotate .slide-image.current {opacity: 1;}
+.slide-images.transition-rotate .slide-image img {position: relative;}
+.slide-images.transition-rotate .slide-image.current img {left: 0;top: 0;-moz-transform: rotate(720deg);-webkit-transform: rotate(720deg);-o-transform: rotate(720deg);transform: rotate(720deg);}
